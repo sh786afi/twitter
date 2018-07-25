@@ -1,0 +1,36 @@
+
+
+<html>
+
+    <head>
+        
+        <title>AJAX</title>
+ 
+        <script type="text/javascript" src="jquery-migrate-3.0.0.min.js"></script>
+        
+    </head>
+
+    <body>
+        
+        <p></p>
+        
+        <script type="text/javascript">
+          
+            $.ajax("data.txt")
+                .done(function(data) {
+                
+                $("p").html(data);
+                
+                })
+                .fail(function() {
+                
+                alert("Could not get data");
+                
+                });
+            
+        
+        </script>
+        
+    </body>
+
+</html>

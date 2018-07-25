@@ -1,0 +1,18 @@
+<html>
+  <head>
+      <title>JavaScript</title>
+  </head>
+  <body>
+      <input type="text" id="textInput" placeholder="Enter Something"></input>
+      <button id="button">Show Text</button>
+      <p id="text">Replace This text with input</p>
+   <script type="text/javascript">      
+        document.getElementById("button").onclick=function() {
+            var showtext="";
+                showtext=document.getElementById("textInput").value;
+            document.getElementById("text").innerHTML=showtext;
+        }
+       
+  </script>
+  </body>
+</html>
